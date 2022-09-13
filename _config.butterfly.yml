@@ -647,8 +647,7 @@ subtitle:
   source: false
   # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
   sub:
-    - 何其荣幸 何德何能
-    - 所有的不平凡都来自平凡
+    - Live your life and come here on the road
 
 # Loading Animation (加載動畫)
 preloader: true
