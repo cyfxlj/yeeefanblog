@@ -183,7 +183,7 @@ anchor: false
 # toc (目錄)
 toc:
   post: true
-  page: true
+  page: false
   number: true
   expand: false
   style_simple: false # for post
