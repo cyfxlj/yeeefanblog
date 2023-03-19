@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>yeeefan&#39;s blog</title>
+  <icon>http://example.com/icon.png</icon>
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2023-03-19T02:20:32.650Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>yeeefan</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hello</title>
+    <link href="http://example.com/posts/undefined.html"/>
+    <id>http://example.com/posts/undefined.html</id>
+    <published>2023-03-19T02:20:32.000Z</published>
+    <updated>2023-03-19T02:20:32.650Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Atlas200DK踩坑记之分设环境搭建</title>
+    <link href="http://example.com/posts/undefined.html"/>
+    <id>http://example.com/posts/undefined.html</id>
+    <published>2023-03-19T01:50:36.000Z</published>
+    <updated>2023-03-19T02:07:27.028Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;#Atlas200DK踩坑记之分设环境搭建&lt;br&gt;最近在做华为开发板Atlas200DK的一些项目工作，在搭建开发环境和运行环境时，踩了许多坑，前前后后重装系统3次，这里仅以此篇，记录我的踩坑记，避免下次出现意外忘记如何操作，也给大家在开发时带来一些参考。&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    <category term="技能" scheme="http://example.com/categories/%E6%8A%80%E8%83%BD/"/>
+    
+    
+    <category term="study" scheme="http://example.com/tags/study/"/>
+    
+    <category term="Atals" scheme="http://example.com/tags/Atals/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在wsl2的ubuntu20.04中安装docker</title>
+    <link href="http://example.com/posts/undefined.html"/>
+    <id>http://example.com/posts/undefined.html</id>
+    <published>2022-09-14T16:46:08.000Z</published>
+    <updated>2022-09-15T07:48:55.843Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;wsl2下docker常用命令&quot;&gt;&lt;a href=&quot;#wsl2下docker常用命令&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技能" scheme="http://example.com/categories/%E6%8A%80%E8%83%BD/"/>
+    
+    
+    <category term="study" scheme="http://example.com/tags/study/"/>
+    
+    <category term="docker" scheme="http://example.com/tags/docker/"/>
+    
+    <category term="wsl2" scheme="http://example.com/tags/wsl2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown学习</title>
+    <link href="http://example.com/posts/undefined.html"/>
+    <id>http://example.com/posts/undefined.html</id>
+    <published>2022-09-04T07:17:35.000Z</published>
+    <updated>2022-09-13T15:00:25.967Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Markdown基本语法学习&quot;&gt;&lt;a href=&quot;#Markdown基本语法学习&quot; class=&quot;headerlink&quot; title=&quot;Markdown基本语法学习&quot;&gt;&lt;/a&gt;Markdown基本语法学习&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="技能" scheme="http://example.com/categories/%E6%8A%80%E8%83%BD/"/>
+    
+    
+    <category term="Markdown" scheme="http://example.com/tags/Markdown/"/>
+    
+    <category term="study" scheme="http://example.com/tags/study/"/>
+    
+  </entry>
+  
+</feed>

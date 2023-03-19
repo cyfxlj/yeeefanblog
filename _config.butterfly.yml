@@ -1,7 +1,6 @@
 # Main menu navigation (導航目錄)
 # see https://butterfly.js.org/posts/4aa8abbe/#導航菜單
 # --------------------------------------
-
 menu:
   首页: / || fas fa-home
   时间轴: /archives/ || fas fa-archive
@@ -949,3 +948,4 @@ CDN:
     # prismjs_autoloader:
     # artalk_js:
     # artalk_css:
+    
