@@ -25,16 +25,16 @@ GRUB_CMDLINE_LINUX_DEFAULT="nouveau.modeset=0"
 sudo update-grub
 ```
 &emsp;然后我们需要注意网上许多安装ubuntu的教程中分配空间时会将根目录/的空间分配的很小，但是我们今后在ubuntu上所装的软件，不出意外大部分都是装在根目录下的，因此！！！墙裂建议将根目录/的空间尽可能分配大一些。
-##2.配置开发环境
+## 2.配置开发环境
 &emsp;由于本次教程是分设环境的搭建，因此我们将在pc机上安装开发环境。
-###2.1下载MindStudio和CANN对应版本安装包
+### 2.1下载MindStudio和CANN对应版本安装包
 &emsp;版本的对应关系非常重要，[MindStudio的用户手册](https://www.hiascend.com/document/detail/zh/mindstudio/50RC3/releasenote/releasenote_000001.html)上有个版本对应关系，我们要确定好MindStudio和CANN的版本，我这里选择的是MindStudio5.0.RC3，CANN6.0.RC1。直接点击进入下载。这里我们要在Ubuntu下下载，因此选择.tar.gz文件
 ![图片](/pic/Snipaste_2023-03-20_10-53-44.png)
 接着下载CANN6.0.RC1的arrch64架构的tookit和nnrt包。tookie是要在MindStudio上导入的开发环境工具包，而nnrt包是要安装在开发板上的运行环境包。
 ![图片2](/pic/Snipaste_2023-03-20_11-01-27.png)
 然后下载X86_64架构的tookit包
 ![图片3](/pic/Snipaste_2023-03-20_11-42-05.png)
-##2.2安装开发环境
+## 2.2安装开发环境
 为了方便省事我使用root用户安装在根目录下面，这就是为什么我强烈推荐多分配点空间给根目录。
 1. 首先安装MindStudio，cd到安装包目录，打开root用户
 ```ubuntu
