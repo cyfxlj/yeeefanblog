@@ -1,12 +1,13 @@
 ---
 title: 在wsl2的ubuntu20.04中安装docker
-date: 2022-09-15 00:46:08
 tags:
-	- study
-	- docker
-	- wsl2
+  - study
+  - docker
+  - wsl2
 categories:
-	- 技能
+  - 技能
+abbrlink: 4f324844
+date: 2022-09-15 00:46:08
 ---
 
 # wsl2下docker常用命令

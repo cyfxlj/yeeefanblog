@@ -1,11 +1,12 @@
 ---
 title: Markdown学习
-date: 2022-09-04 15:17:35
-tags: 
-	- Markdown
-	- study
+tags:
+  - Markdown
+  - study
 categories:
-	- 技能
+  - 技能
+abbrlink: 82d7ef45
+date: 2022-09-04 15:17:35
 ---
 
 # Markdown基本语法学习
