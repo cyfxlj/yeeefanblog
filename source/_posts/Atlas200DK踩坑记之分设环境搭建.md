@@ -93,6 +93,24 @@ tar -zxvf MindStudio_{version}_linux.tar.gz
 cd MindStudio/bin
 ./MindStudio.sh
 ```
+5. 安装CANN
+cd到下载CANN安装包得目录下面
+```ubuntu
+chmod +x 软件包名.run
+./软件包名.run --install
+```
+&emsp;配置环境变量
+```ubuntu
+vi ~/.bashrc
+source /usr/local/Ascend/ascend-toolkit/set_env.sh
+source ~/.bashrc
+```
+&emsp;配置交叉编译环境，搭建分设环境时，用于编译的是X86架构的pc机，而用于运行的则是arm64架构的昇腾处理器。
+```ubuntu
+sudo apt-get install g++-aarch64-linux-gnu
+```
+至此开发环境搭建完毕。
+
 &emsp;写到一半突然感觉自己写的太罗嗦了，这些其实在用户手册中都有，再结合[这个博主的文章](https://zhanghui-china.blog.csdn.net/article/details/124611486)就可以了，那就再浅浅介绍记录一下自己踩的一些坑吧。
 &emsp;首先下载[官方例程](https://gitee.com/ascend/samples.git)时千万要注意不要像前面安装环境那样装在“/home/user/下载” 这个目录里面，不能出现中文，不然后面模型转换时无法加载模型文件。
 &emsp;然后我们在运行例程时可能会需要一些其他的python包，我们打开终端用root用户装上即可。
@@ -105,3 +123,27 @@ cd /home/HwHiAiUser/.../out
 ```
 为什么是/bin/bash ./main？而不是直接./main？
 对此我目前只能在终端中ssh远程连接然后手动cd到main的目录再执行./main。
+# 3.配置运行环境
+&emsp;配置运行环境包括了制卡、网络配置、安装nnrt等操作，这里仅提供官方文档。
+https://www.hiascend.com/document/detail/zh/Atlas200DKDeveloperKit/1013/environment/atlased_04_0003.html
+&emsp;但是在装完测试demo时，可能会有如下报错：
+![图片5](/pic/QQ图片20230327192629.jpg)
+&emsp;我们参考这篇文章就可以完美解决了:[https://bbs.huaweicloud.com/blogs/344623](https://bbs.huaweicloud.com/blogs/344623)
+# 4.合设环境搭建
+&emsp;鉴于在MindStudio上开发具有一定的难度和门槛，这里还是介绍一下合设环境搭建。我们在配置运行环境时已经安装了nnrt。还需要在运行环境中安装CANN。这里我遇到的一个坑就是arm64架构的开发板中的换源问题。
+&emsp;ubuntu有两种软件源：archive 源和 ports 源是根本完全不一样的，其涉及到处理 器的架构。如果两个源混用的话，会造成一些不可描述的错误和BUG。
+&emsp;软件源[http://archive.ubuntu.com](http://archive.ubuntu.com)收录的架构为 AMD64 (x86_64) 和 Intel x86
+&emsp;软件源[http://ports.ubuntu.com](http://ports.ubuntu.com)收录的架构为 arm64，armhf，PowerPC，ppc64el 和 s390x。
+&emsp;因此我们需要用ports的软件源，我这里是从Ascend官方技术交流群的一个大佬那边copy过来的源：
+```ubuntu
+deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ bionic main multiverse restricted universe
+deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ bionic-security main multiverse restricted universe
+deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ bionic-updates main multiverse restricted universe
+deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ bionic-backports main multiverse restricted universe
+deb-src http://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ bionic main multiverse restricted universe
+deb-src http://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ bionic-security main multiverse restricted universe
+deb-src http://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ bionic-updates main multiverse restricted universe
+deb-src http://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ bionic-backports main multiverse restricted universe
+```
+&emsp;记得最后要update。
+&emsp;之后我们就可以随心所欲下载你想要的包了，包括opencv等。
