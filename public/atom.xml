@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-03-27T11:48:05.230Z</updated>
+  <updated>2023-04-05T12:54:16.531Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Atlas踩坑记之调用摄像头实现yolov5(pytorch)模型推理</title>
+    <link href="http://example.com/posts/e3e8256a.html"/>
+    <id>http://example.com/posts/e3e8256a.html</id>
+    <published>2023-04-05T12:48:03.000Z</published>
+    <updated>2023-04-05T12:54:16.531Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Atlas踩坑记之调用摄像头实现yolov5-pytorch-模型推理&quot;&gt;&lt;a href=&quot;#Atlas踩坑记之调用摄像头实现yolov5-pytorch-模型推理&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技能" scheme="http://example.com/categories/%E6%8A%80%E8%83%BD/"/>
+    
+    
+    <category term="study" scheme="http://example.com/tags/study/"/>
+    
+  </entry>
   
   <entry>
     <title>Atlas200DK踩坑记之分设环境搭建</title>
